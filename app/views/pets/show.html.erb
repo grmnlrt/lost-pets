@@ -1,0 +1,8 @@
+<h1><%= @pet.name %></h1>
+<ul>
+  <li>age: <%= @pet.age %></li>
+  <li>species: <%= @pet.species %></li>
+</ul>
+
+<%= link_to "Delete", pet_path(@pet), method: :delete %>
+<%= link_to "back to list", pets_path %>

@@ -1,4 +1,5 @@
 class Pet < ApplicationRecord
+  SPECIES = %w(dog cat bird horse)
   validates :name, presence: true
-  validates :species, inclusion: { in: %w(dog cat bird) }
+  validates :species, inclusion: { in: SPECIES }
 end
